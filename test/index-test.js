@@ -5,7 +5,7 @@ it('defines `greeting`', function() {
 })
 
 it('concatenates strings to greet a special guest in `greetSpecialGuest`', function() {
- assert.equal(greetSpecialGuest, "Hello, " + specialGuest + "!")
+ expect(greetSpecialGuest).toEqual(`Hello, ${specialGuest}!`)
 })
 
 it('interpolates a string in `conversation`', function() {
